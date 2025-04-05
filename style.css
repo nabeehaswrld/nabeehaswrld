@@ -1,0 +1,321 @@
+/* ----------------------------
+   Global Reset & Base Styles
+----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* ----------------------------
+   Typography & Layout
+----------------------------- */
+section {
+  margin-bottom: 40px;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* ----------------------------
+   HEADER & NAVIGATION
+----------------------------- */
+header {
+  background-color: #3c7747;
+  text-align: center;
+  padding: 20px 0;
+  color: #FFFFFF;
+}
+
+header .logo {
+  display: block;
+  margin: 0 auto 10px;
+  height: 100px;
+}
+
+header h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+  color: #F4F4F3;
+}
+
+nav a.active {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+/* ----------------------------
+   MAIN CONTENT
+----------------------------- */
+main {
+  max-width: 1280px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: left;
+  flex: 1;
+}
+
+/* ----------------------------
+   Profile Image Styles
+----------------------------- */
+.profile-image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* ----------------------------
+   Speaker Highlights Styles
+----------------------------- */
+.highlights-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+
+.highlight-card {
+  flex: 1;
+  max-width: 200px;
+}
+
+.highlight-card img {
+  display: block;
+  margin: 0 auto 10px;
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.highlight-card h3 {
+  margin-bottom: 10px;
+}
+
+/* ----------------------------
+   Responsive Image Containers
+----------------------------- */
+.responsive-image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* ----------------------------
+   Blockquotes
+----------------------------- */
+blockquote {
+  text-align: center;
+  background: #f4f4f3;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 30px;
+  color: #000000;
+  border-radius: 20px;
+}
+
+/* ----------------------------
+   Tables
+----------------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #FFFFFF;
+}
+
+th {
+  background-color: #3c7747;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* ----------------------------
+   FORMS
+----------------------------- */
+form {
+  background-color: #f4f4f3;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  outline: none;
+}
+
+form textarea {
+  height: 60px;
+  resize: vertical;
+}
+
+/* ----------------------------
+   BUTTONS & CTAs
+----------------------------- */
+.cta-button {
+  background-color: #3c7747;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #2f5d39;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* ----------------------------
+   FOOTER
+----------------------------- */
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #3c7747;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-icons a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* ----------------------------
+   Additional Utility Classes
+----------------------------- */
+.download-button {
+  margin: 20px;
+}
